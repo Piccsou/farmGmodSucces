@@ -14,12 +14,12 @@ class FarmGmod
             Console.WriteLine("Lancement de Gmod pour la " + i + " fois.");
 
             Process gmod = Process.Start(new ProcessStartInfo("C:/Program Files (x86)/Steam/steamapps/common/GarrysMod/hl2.exe"));
-            Console.WriteLine("Gmod lancé ! Attente de 5 secondes.");
+            Console.WriteLine("Gmod lancé ! Attente de 10 secondes.");
             Thread.Sleep(10000);
             Console.WriteLine("Reprise.");
             gmod.Kill();
             Console.WriteLine("Gmod a été fermé !");
-            Console.WriteLine("Attente de 5 secondes.");
+            Console.WriteLine("Attente de 10 secondes.");
             Thread.Sleep(10000);
             Console.WriteLine("Reprise...");
         }
